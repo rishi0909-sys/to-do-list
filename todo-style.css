@@ -64,6 +64,14 @@ body{
     cursor: pointer;
     /* filter: drop-shadow(2px 2px 5px black); */
 }
+#adder{
+    position: relative;
+    gap: 20px;
+}
+#delete{
+    position: relative;
+    margin-left:5px;
+}
 .btn:active{
     transform: translate(2px,2px);
 }
