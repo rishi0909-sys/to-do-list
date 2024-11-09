@@ -21,6 +21,22 @@ addbutton.addEventListener("click",(e)=>{
     tasklist.appendChild(task)
     taskinp.value=""
 })
+taskform.addEventListener("keydown",()=>{
+    if(e.key==="Enter"){
+        e.preventDefault()
+    const taskdata = taskinp.value.trim()
+    if(taskdata===""){
+        return
+    }
+    const task = document.createElement("li")
+    task.classList.add("task-item")
+    task.textContent = taskdata
+    task.addEventListener("click",()=>{
+        tasklist.classList.toggle("completed")
+    })
+    tasklist.appendChild(task)
+    taskinp.value=""
+    }
 delbutton.addEventListener("click",()=>{
     tasklist.textContent=""
 })
