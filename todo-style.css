@@ -11,6 +11,11 @@ body{
     align-items: center;
     
 }
+#task-form{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
 #task-input{
     min-width:270px;
     /* position: relative; */
