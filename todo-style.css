@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height:100vh;
+    align-items: center;
+    
+}
+#task-input{
+    min-width:270px;
+    /* position: relative; */
+    margin: auto;
+    /* min-width:100px; */
+    margin:10px;
+    width: 23vw;  
+    /* min-width:200px;   */
+    height: 40px; 
+    padding:5px;
+    border-radius: 10px;
+    outline: none;
+}
+#display-area{
+    min-width: 300px;  
+    height:50vh;
+    width: 25vw;
+    padding-left: 8px;
+    padding-top: 10px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+#displayed{
+    list-style: none;
+    font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#button-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.ri-add-large-fill{
+    font-size: x-large;
+    color: rgb(119, 119, 193);
+}
+.ri-delete-bin-7-line{
+    font-size: x-large;
+    color: rgb(119, 119, 193);
+}
+.btn{
+    height: 50px;
+    width: 50px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color:rgba(127, 255, 212, 0.691);
+    cursor: pointer;
+    /* filter: drop-shadow(2px 2px 5px black); */
+}
+.btn:active{
+    transform: translate(2px,2px);
+}
+.task-item{
+    padding: 3px;
+}
